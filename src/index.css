@@ -17,6 +17,23 @@ body {
   background-size: 200% 200%;
   animation: gradientShift 15s ease infinite;
   min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(79, 172, 254, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(95, 179, 211, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(125, 211, 252, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+  animation: pulse 8s ease-in-out infinite;
 }
 
 @keyframes gradientShift {
@@ -28,6 +45,15 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
   }
 }
 
