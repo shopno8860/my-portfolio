@@ -9,8 +9,29 @@
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-radius: 30px;
   padding: 3rem;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+    0 0 80px rgba(125, 211, 252, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(125, 211, 252, 0.1) 0%,
+    transparent 70%
+  );
+  animation: rotateSlow 25s linear infinite;
+  pointer-events: none;
 }
 
 .contact-info-card {
@@ -53,19 +74,51 @@
 }
 
 .contact-icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto 1rem;
-  background: rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.2),
+    0 0 0 0 rgba(125, 211, 252, 0.4);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.4) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.contact-info-card:hover .contact-icon::before {
+  width: 120px;
+  height: 120px;
+}
+
+.contact-info-card:hover .contact-icon {
+  transform: translateY(-5px) rotate(5deg) scale(1.1);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.3),
+    0 0 0 4px rgba(125, 211, 252, 0.3),
+    0 0 30px rgba(125, 211, 252, 0.4);
+  border-color: rgba(125, 211, 252, 0.5);
 }
 
 .contact-info-card h4 {
@@ -120,9 +173,12 @@
 
 .form-control:focus {
   outline: none;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(125, 211, 252, 0.6);
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 0 0 3px rgba(125, 211, 252, 0.2),
+    0 0 20px rgba(125, 211, 252, 0.3);
+  transform: translateY(-2px);
 }
 
 .form-control.is-invalid {

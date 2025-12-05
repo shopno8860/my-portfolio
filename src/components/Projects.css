@@ -50,14 +50,38 @@
 
 .project-image {
   position: relative;
-  height: 200px;
-  background: rgba(255, 255, 255, 0.1);
+  height: 220px;
+  background: linear-gradient(
+    135deg,
+    rgba(125, 211, 252, 0.1),
+    rgba(95, 179, 211, 0.1)
+  );
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at center,
+    rgba(125, 211, 252, 0.2) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-image::before {
+  opacity: 1;
 }
 
 .project-icon {
@@ -147,16 +171,36 @@
 }
 
 .tech-tag {
-  padding: 0.4rem 0.8rem;
-  background: rgba(255, 255, 255, 0.15);
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(10px);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-tag::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  transition: width 0.5s ease, height 0.5s ease;
+}
+
+.tech-tag:hover::before {
+  width: 150px;
+  height: 150px;
 }
 
 .tech-tag:hover {

@@ -42,7 +42,7 @@ const Projects = () => {
       title: 'Portfolio Website',
       description: 'A responsive portfolio website showcasing projects, skills, and contact information with smooth animations.',
       technologies: ['React', 'Bootstrap', 'CSS3'],
-      githubUrl: 'https://github.com/yourusername/portfolio',
+      githubUrl: 'https://github.com/shopno8860/my-portfolio',
       image: '💼'
     }
   ];

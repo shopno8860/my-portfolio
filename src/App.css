@@ -74,6 +74,10 @@ section {
 .section-subtitle {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  animation: fadeInUp 0.8s ease 0.2s both;
 }
 
 /* Responsive adjustments */
