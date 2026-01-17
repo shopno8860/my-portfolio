@@ -11,7 +11,7 @@ const Skills = () => {
         { name: 'HTML5', level: 95, icon: 'fab fa-html5' },
         { name: 'CSS3', level: 90, icon: 'fab fa-css3-alt' },
         { name: 'Bootstrap', level: 85, icon: 'fab fa-bootstrap' },
-        { name: 'TypeScript', level: 75, icon: 'fab fa-js-square' }
+        { name: 'Tailwind CSS', level: 75, icon: 'fab fa-js-square' }
       ]
     },
     {
