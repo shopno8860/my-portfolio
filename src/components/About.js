@@ -19,7 +19,7 @@ const About = () => {
               <div className="image-container">
                 <div className="about-image-placeholder">
                   <img 
-                    src="/images/1000039928.jpg" 
+                    src={`${process.env.PUBLIC_URL}/images/1000039928.jpg`}
                     alt="Rakesh Al Yadin" 
                     className="about-profile-picture"
                   />

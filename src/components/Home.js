@@ -11,7 +11,7 @@ const Home = () => {
   const handleDownloadCV = () => {
     // Create a temporary anchor element to trigger download
     const link = document.createElement('a');
-    link.href = '/images/Shopno_Resume.pdf';
+    link.href = `${process.env.PUBLIC_URL}/images/Shopno_Resume.pdf`;
     link.download = 'Shopno_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
                 <div className="profile-image">
                   <img 
-                    src="/images/1000039928.jpg" 
+                    src={`${process.env.PUBLIC_URL}/images/1000039928.jpg`}
                     alt="Rakesh AL Yadin" 
                     className="profile-picture"
                   />

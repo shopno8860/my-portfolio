@@ -17,27 +17,7 @@ const Projects = () => {
       githubUrl: 'https://github.com/shopno8860/Online-Quiz-Final/tree/master',
       image: '📋'
     },
-    {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather dashboard that displays current weather conditions and forecasts using a weather API.',
-      technologies: ['React', 'JavaScript', 'OpenWeather API'],
-      githubUrl: 'https://github.com/yourusername/weather-dashboard',
-      image: '🌤️'
-    },
-    {
-      title: 'Social Media Dashboard',
-      description: 'A comprehensive social media analytics dashboard with data visualization, user insights, and engagement metrics.',
-      technologies: ['React', 'Chart.js', 'Node.js', 'PostgreSQL'],
-      githubUrl: 'https://github.com/yourusername/social-dashboard',
-      image: '📊'
-    },
-    {
-      title: 'Blog Platform',
-      description: 'A modern blog platform with rich text editing, comment system, user profiles, and SEO optimization.',
-      technologies: ['React', 'Next.js', 'Sanity CMS'],
-      githubUrl: 'https://github.com/yourusername/blog-platform',
-      image: '✍️'
-    },
+    
     {
       title: 'Portfolio Website',
       description: 'A responsive portfolio website showcasing projects, skills, and contact information with smooth animations.',
