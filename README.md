@@ -2,6 +2,8 @@
 
 A modern, fully responsive portfolio website built with React.js, Bootstrap, HTML, and JavaScript. This portfolio showcases your projects, skills, and provides a way for visitors to contact you.
 
+🌐 **Live Demo**: [https://shopno8860.github.io/my-portfolio](https://shopno8860.github.io/my-portfolio)
+
 ## Features
 
 - **Fully Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices
@@ -23,6 +25,7 @@ A modern, fully responsive portfolio website built with React.js, Bootstrap, HTM
 - React Bootstrap 2.9.1
 - Font Awesome 6.4.0
 - Google Fonts (Poppins)
+- gh-pages (for GitHub Pages deployment)
 
 ## Installation
 
@@ -48,6 +51,37 @@ Create an optimized production build:
 ```bash
 npm run build
 ```
+
+## Deployment to GitHub Pages
+
+This project is configured for deployment to GitHub Pages. To deploy:
+
+1. **First-time setup** (already completed):
+   - The `homepage` field in `package.json` is set to your GitHub Pages URL
+   - `gh-pages` package is installed as a dev dependency
+   - Deployment scripts are configured
+
+2. **Deploy to GitHub Pages**:
+   ```bash
+   npm run deploy
+   ```
+   
+   This command will:
+   - Build the production version of your app
+   - Create/update the `gh-pages` branch
+   - Push the build files to GitHub Pages
+
+3. **Enable GitHub Pages** (if not already enabled):
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" section
+   - Ensure it's set to deploy from the `gh-pages` branch
+   - Your site will be available at `https://shopno8860.github.io/my-portfolio`
+
+4. **Future deployments**:
+   - After making changes, simply run `npm run deploy` again
+   - Changes will be live within a few minutes
+
+**Note**: The app uses `process.env.PUBLIC_URL` for asset paths to ensure images and other resources load correctly on GitHub Pages.
 
 ## Customization
 
@@ -94,6 +128,9 @@ Update meta tags in `public/index.html`:
 ```
 portfolio/
 ├── public/
+│   ├── images/
+│   │   ├── 1000039928.jpg
+│   │   └── Shopno_Resume.pdf
 │   ├── index.html
 │   └── manifest.json
 ├── src/
@@ -109,11 +146,14 @@ portfolio/
 │   │   ├── Projects.js
 │   │   ├── Projects.css
 │   │   ├── Contact.js
-│   │   └── Contact.css
+│   │   ├── Contact.css
+│   │   ├── Footer.js
+│   │   └── Footer.css
 │   ├── App.js
 │   ├── App.css
 │   ├── index.js
 │   └── index.css
+├── build/ (generated after running npm run build)
 ├── package.json
 └── README.md
 ```
@@ -152,3 +192,9 @@ This project is open source and available under the MIT License.
 
 Feel free to fork this project and customize it for your own portfolio!
 
+## Author
+
+**Rakesh Al Yadin**
+
+- GitHub: [@shopno8860](https://github.com/shopno8860)
+- Email: shopno8860@gmail.com
