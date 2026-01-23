@@ -56,7 +56,7 @@ const Home = () => {
                 <a href="https://www.linkedin.com/in/rakesh-al-yadin-30b08226b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="mail to:shopno8860@gmail.com" aria-label="Email">
+                <a href="mailto:shopno8860@gmail.com" aria-label="Email">
                   <i className="fas fa-envelope"></i>
                 </a>
               </div>
