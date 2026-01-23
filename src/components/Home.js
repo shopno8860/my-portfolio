@@ -50,16 +50,13 @@ const Home = () => {
                 </button>
               </div>
               <div className="social-links">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a href="https://github.com/shopno8860" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/rakesh-al-yadin-30b08226b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="mailto:shopno8860@gmail.com" aria-label="Email">
+                <a href="mail to:shopno8860@gmail.com" aria-label="Email">
                   <i className="fas fa-envelope"></i>
                 </a>
               </div>

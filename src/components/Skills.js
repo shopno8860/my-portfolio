@@ -10,19 +10,19 @@ const Skills = () => {
         { name: 'JavaScript', level: 85, icon: 'fab fa-js' },
         { name: 'HTML5', level: 95, icon: 'fab fa-html5' },
         { name: 'CSS3', level: 90, icon: 'fab fa-css3-alt' },
-        { name: 'Bootstrap', level: 85, icon: 'fab fa-bootstrap' },
-        { name: 'Tailwind CSS', level: 75, icon: 'fab fa-js-square' }
+        { name: 'Bootstrap', level: 80, icon: 'fab fa-bootstrap' },
+        { name: 'Tailwind CSS', level: 85, icon: 'fab fa-js-square' }
       ]
     },
     {
       title: 'Backend',
       skills: [
-        { name: 'Node.js', level: 80, icon: 'fab fa-node-js' },
-        { name: 'Express.js', level: 75, icon: 'fas fa-server' },
-        { name: 'MongoDB', level: 70, icon: 'fas fa-database' },
-        { name: 'PostgreSQL', level: 65, icon: 'fas fa-database' },
-        { name: 'REST API', level: 85, icon: 'fas fa-code' },
-        { name: 'GraphQL', level: 60, icon: 'fas fa-project-diagram' }
+        { name: 'Node.js', level: 30, icon: 'fab fa-node-js' },
+        { name: 'Express.js', level: 30, icon: 'fas fa-server' },
+        { name: 'MongoDB', level: 40, icon: 'fas fa-database' },
+        
+        { name: 'REST API', level: 45, icon: 'fas fa-code' },
+        { name: 'GraphQL', level: 30, icon: 'fas fa-project-diagram' }
       ]
     },
     {
@@ -30,8 +30,8 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 85, icon: 'fab fa-git-alt' },
         { name: 'GitHub', level: 90, icon: 'fab fa-github' },
-        { name: 'Docker', level: 65, icon: 'fab fa-docker' },
-        { name: 'AWS', level: 60, icon: 'fab fa-aws' },
+        
+      
         { name: 'Figma', level: 70, icon: 'fab fa-figma' },
         { name: 'VS Code', level: 95, icon: 'fas fa-code' }
       ]

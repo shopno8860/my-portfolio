@@ -3,10 +3,9 @@ import './About.css';
 
 const About = () => {
   const stats = [
-    { number: '50+', label: 'Projects Completed' },
-    { number: '3+', label: 'Years Experience' },
-    { number: '30+', label: 'Happy Clients' },
-    { number: '20+', label: 'Technologies' }
+    { number: '5+', label: 'Projects Completed' },
+    
+    { number: '10+', label: 'Technologies' }
   ];
 
   return (
@@ -76,7 +75,7 @@ const About = () => {
         <div className="stats-section">
           <div className="row">
             {stats.map((stat, index) => (
-              <div key={index} className="col-md-3 col-sm-6 mb-4">
+              <div key={index} className="col-md-6 col-sm-6 mb-4">
                 <div className="stat-card">
                   <h3 className="stat-number">{stat.number}</h3>
                   <p className="stat-label">{stat.label}</p>

@@ -14,7 +14,7 @@ const Projects = () => {
       title: 'QuizZone',
       description: 'An online quiz system enabling users to answer MCQs, validate responses, and receive automatic scoring with summary review. Clean UI with structured question flow',
       technologies: ['Html', 'Css', 'Bootstrap', 'c#','dotnet'],
-      githubUrl: 'https://github.com/shopno8860/Online-Quiz-Final/tree/master',
+      githubUrl: 'https://github.com/shopno8860/QuizZone',
       image: '📋'
     },
     
