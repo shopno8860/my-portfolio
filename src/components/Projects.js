@@ -4,8 +4,8 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with user authentication, product management, shopping cart, and payment integration.',
+      title: 'E-Commerce ',
+      description: 'A Ecommerce Landing Page',
       technologies: ['Html', 'Css', 'Bootstrap', 'javascript'],
       githubUrl: 'https://github.com/shopno8860/class-10-homework',
       image: '🛒'
@@ -14,7 +14,7 @@ const Projects = () => {
       title: 'QuizZone',
       description: 'An online quiz system enabling users to answer MCQs, validate responses, and receive automatic scoring with summary review. Clean UI with structured question flow',
       technologies: ['Html', 'Css', 'Bootstrap', 'c#','dotnet'],
-      githubUrl: 'https://github.com/shopno8860/QuizZone',
+      githubUrl: 'https://github.com/shopno8860/Quiz',
       image: '📋'
     },
     
@@ -24,6 +24,20 @@ const Projects = () => {
       technologies: ['React', 'Bootstrap', 'CSS3'],
       githubUrl: 'https://github.com/shopno8860/my-portfolio',
       image: '💼'
+    },
+    {
+      title: 'Gadget Heaven',
+      description: 'An online gadget store platform for browsing and purchasing tech products with a user-friendly interface.',
+      technologies: ['React', 'JavaScript', 'CSS', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/shopno8860/gadget-heaven',
+      image: '📱'
+    },
+    {
+      title: 'Flight Booking',
+      description: 'A flight booking application allowing users to search, compare, and book flights with an intuitive booking interface.',
+      technologies: ['React', 'JavaScript', 'CSS', 'Tailwind CSS'],
+      githubUrl: 'https://github.com/shopno8860/flight-booking',
+      image: '✈️'
     }
   ];
 

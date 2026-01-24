@@ -19,7 +19,7 @@ const Skills = () => {
       skills: [
         { name: 'Node.js', level: 30, icon: 'fab fa-node-js' },
         { name: 'Express.js', level: 30, icon: 'fas fa-server' },
-        { name: 'MongoDB', level: 40, icon: 'fas fa-database' },
+        { name: 'MongoDB', level: 30, icon: 'fas fa-database' },
         
         { name: 'REST API', level: 45, icon: 'fas fa-code' },
         { name: 'GraphQL', level: 30, icon: 'fas fa-project-diagram' }
